@@ -1,0 +1,15 @@
+.heading{
+    font-size: x-large;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.map{
+    width: 700px;
+    height: 500px;
+    background-color: aqua;
+    margin-top: 30px;
+}
