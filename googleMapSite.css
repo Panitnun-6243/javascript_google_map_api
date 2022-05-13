@@ -1,12 +1,13 @@
 .heading {
   font-size: xx-large;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .map {
   width: 700px;
