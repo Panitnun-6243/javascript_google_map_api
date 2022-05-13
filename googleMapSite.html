@@ -11,6 +11,14 @@
     <div class="container">
     <div class="heading">Google Maps site</div>
     <div id="map" class="map">s</div>
+    <script>
+        function myMap(){
+            var mapCanvas = document.getElementById("map")
+            var mapOptions = {center: new google.maps.LatLng(18.6916598,97.6683007), zoom: 12} 
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </div>
 </body>
 </html>
