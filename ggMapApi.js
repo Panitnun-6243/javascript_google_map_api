@@ -1,10 +1,10 @@
 function myMap(){
-    var mapLatLng = {lat: 17.9004781, lng: 99.604355}
+    var mapLatLng = {lat: 13.7597, lng: 100.3442}
     var mapCanvas = document.getElementById("map")
     var mapOptions = {center: mapLatLng, zoom: 8, mapTypeId: 'roadmap'} 
     var map = new google.maps.Map(mapCanvas, mapOptions)
     var marker = new google.maps.Marker({
-        positon: mapLatLng,
+        position: mapLatLng,
         title: "I'm here",
     })
     marker.setMap(map)
