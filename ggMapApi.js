@@ -24,7 +24,7 @@ function myMap() {
       marker = null;
     },
 
-    6000
+    15000
   ); //set marker timeout
 
   setTimeout(
@@ -33,6 +33,6 @@ function myMap() {
       marker2 = null;
     },
 
-    6000
+    15000
   ); //set marker2 timeout
 }
