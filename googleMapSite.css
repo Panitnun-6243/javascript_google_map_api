@@ -22,8 +22,20 @@
 }
 .map-container{
   width: 70vw;
-  height: 80vh;
+  height: 75vh;
   margin: auto;
+}
+.latlng{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+.latlng div{
+  color: white;
+  font-size: x-large;
+  font-family: 'Roboto', sans-serif;
+  
 }
 body {
   background: radial-gradient(
@@ -35,4 +47,18 @@ body {
     rgba(75, 118, 69, 1) 100.3%
   );
   margin: 0;
+}
+@media screen and (max-width: 400px) {
+  .latlng{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+  }
+  .latlng div{
+    color: white;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+  }
 }
