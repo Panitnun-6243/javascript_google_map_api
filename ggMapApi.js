@@ -7,18 +7,28 @@ function myMap() {
     position: mapLatLng,
     title: "I'm lived here",
     draggable: true,
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+      size: new google.maps.Size(45, 50),
+      scaledSize: new google.maps.Size(45, 50),
+    },
   }); //map marker
 
   var marker2 = new google.maps.Marker({
     position: new google.maps.LatLng(13.6513, 100.4964),
     title: "My univerity",
     draggable: true,
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+      size: new google.maps.Size(45, 50),
+      scaledSize: new google.maps.Size(45, 50),
+    },
   }); //map marker2
 
   marker.setMap(map); //set map for marker
   marker.setAnimation(google.maps.Animation.BOUNCE); //marker animation
   marker2.setMap(map); //set map for marker2
-  marker2.setAnimation(google.maps.Animation.DROP); //marker2 animation
+  marker2.setAnimation(google.maps.Animation.BOUNCE); //marker2 animation
 
   // setTimeout(
   //   () => {
@@ -50,7 +60,7 @@ function myMap() {
   google.maps.event.addListener(marker, "dragstart", function (evt) {
     document.getElementById("marker1").innerHTML =
       "<div>Currently dragging marker...</div>";
-  });//get Lat Lng from marker1
+  }); //get Lat Lng from marker1
 
   google.maps.event.addListener(marker2, "dragend", function (evt) {
     document.getElementById("marker2").innerHTML =
@@ -64,5 +74,5 @@ function myMap() {
   google.maps.event.addListener(marker2, "dragstart", function (evt) {
     document.getElementById("marker2").innerHTML =
       "<div>Currently dragging marker...</div>";
-  });//get Lat Lng from marker2
+  }); //get Lat Lng from marker2
 }
